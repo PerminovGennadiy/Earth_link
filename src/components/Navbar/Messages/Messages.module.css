@@ -1,0 +1,42 @@
+/*Общий контейнер*/
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+/*Контейнер у диалогов*/
+.dialog__container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-right: 2px #022c24 solid;
+    border-bottom: 1px #022c2496 solid;
+}
+
+/*диалог*/
+.dialog a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+}
+
+.dialog a:hover {
+    text-decoration: underline;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 30px #022c24;
+    align-self: start;
+    margin-right: 10px;
+}
+
+.message {
+    padding-left: 20px;
+}
+
+.name:hover {
+    font-size: 22px;
+}
