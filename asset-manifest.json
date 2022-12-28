@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Earth_link/static/css/main.87991c62.css",
-    "main.js": "/Earth_link/static/js/main.84c3a6b4.js",
+    "main.css": "/Earth_link/static/css/main.617568a1.css",
+    "main.js": "/Earth_link/static/js/main.595f48d4.js",
     "index.html": "/Earth_link/index.html",
-    "main.87991c62.css.map": "/Earth_link/static/css/main.87991c62.css.map",
-    "main.84c3a6b4.js.map": "/Earth_link/static/js/main.84c3a6b4.js.map"
+    "main.617568a1.css.map": "/Earth_link/static/css/main.617568a1.css.map",
+    "main.595f48d4.js.map": "/Earth_link/static/js/main.595f48d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.87991c62.css",
-    "static/js/main.84c3a6b4.js"
+    "static/css/main.617568a1.css",
+    "static/js/main.595f48d4.js"
   ]
 }
