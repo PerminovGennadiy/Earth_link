@@ -1,0 +1,61 @@
+.posts {
+        font-size: 25px;
+        line-height: 40px;
+        color: rgb(10, 10, 10);
+        padding-bottom: 20px;
+}
+
+/* Контейнер формы */
+.addNewPost {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+
+}
+
+.Name_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.postName {
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+.postMain {
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.postMain, .postName {
+    font-weight: 700;
+    background-color: #004b3d;
+    border-color: #022c24;
+    box-shadow: 3px -3px 15px #022c24;
+}
+
+.addNewPost_button {
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #004b3d;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.addNewPost_button:hover { background: #006351; }
+.addNewPost_button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
