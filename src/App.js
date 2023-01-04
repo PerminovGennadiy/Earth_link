@@ -1,6 +1,5 @@
 import './css/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Messages from './components/Navbar/Messages/Messages';
 import Header from './components/Header/Header';
 import Nav from './components/Navbar/Navbar';
 import MyProfile from './components/Navbar/Profile/MyProfile';
@@ -9,27 +8,36 @@ import Music from './components/Navbar/Music/Music';
 import Settings from './components/Navbar/Settings/Settings';
 import Footer from './components/Footer/Footer';
 import Friends from './components/Navbar/Friends/Friends';
-import FriendsList from './components/Navbar/FriendsList/FriendsList';
+import MessagesContainer from './components/Navbar/Messages/MessagesContainer';
+import { Provider } from 'react-redux';
 
 function App(props) {
-
     return (
         <BrowserRouter>
-            <div className='app_wrapper'>
-                <Header />
-                <Nav />
-                <div className='main-content'>
-                    <Routes>
-                        <Route path="/profile" element={<MyProfile posts={props.state.profilePage.posts} />} />
-                        <Route path="/messages/*" element={<Messages state={props.state.messagesPage} />} />
-                        <Route path="/news" element={<News />} />
-                        <Route path="/music" element={<Music />} />
-                        <Route path="/settings" element={<Settings />} />
-                        <Route path="/friends" element={<Friends />} />
-                    </Routes>
+            <Provider store={props.store}>
+                <div className='app_wrapper'>
+                    <Header />
+                    <Nav state={props.state.messagesPage.dialogsData} />
+                    <div className='main-content'>
+                        <Routes>
+                            <Route path="/profile" element={<MyProfile />} />
+
+                            <Route path="/messages/*" element={<MessagesContainer
+                                store={props.store} />} />
+
+                            <Route path="/news" element={<News />} />
+
+                            <Route path="/music" element={<Music />} />
+
+                            <Route path="/settings" element={<Settings />} />
+
+                            <Route path="/friends" element={<Friends />} />
+                            Z
+                        </Routes>
+                    </div>
+                    <Footer />
                 </div>
-                <Footer />
-            </div>
+            </Provider>
         </BrowserRouter>
     );
 }
