@@ -11,7 +11,7 @@ const Nav = (props) => {
             <div className={cl.navOption}><NavLink to='/music' className = { navData => navData.isActive ? cl.active : cl.item }>Music</NavLink></div>
             <div className={`${cl.navOption} ${cl.last}`}><NavLink to='/settings' className = { navData => navData.isActive ? cl.active : cl.item }>Settings</NavLink></div>
             <div className={cl.navOption}><NavLink to='/friends' className = { navData => navData.isActive ? cl.active : cl.item }>Friends</NavLink></div>
-            <FriendsList />
+            <FriendsList props={props} />
         </nav>
     );
 };

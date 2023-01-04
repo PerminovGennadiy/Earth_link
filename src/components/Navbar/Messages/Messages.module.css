@@ -2,6 +2,11 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+    min-height: 500px;
+}
+
+.dialog_items{
+    border-right: 2px #022c24 solid;
 }
 
 /*Контейнер у диалогов*/
@@ -9,7 +14,6 @@
     display: flex;
     align-items: center;
     padding: 10px 0;
-    border-right: 2px #022c24 solid;
     border-bottom: 1px #022c2496 solid;
 }
 
@@ -39,4 +43,48 @@
 
 .name:hover {
     font-size: 22px;
+}
+
+
+/*  Блок сообшений  */
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    position: relative;
+}
+.AreaMessage {
+    font-weight: 700;
+    width: 770px;
+    height: 100px;
+    background-color: #004b3d;
+    border-color: #022c24;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.sendMessage {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+.sendMessage {
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 10px;
+    background: #004b3d;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.sendMessage:hover { background: #006351; }
+.sendMessage:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
 }

@@ -1,11 +1,15 @@
 import cl from './FriendsList.module.css';
+import Friends from './Friends/Friends';
 
-const Music = (props) => {
+const FriendsList = (props) => {
+
+    let List = props.props.state.map(el => <Friends id={el.id} name={el.name} way={el.way} />)
+
     return (
         <div className={cl.friends}>
-            <div>asdasd</div>
+            <div className={cl.friend}>{List}</div>
         </div>
     );
 };
 
-export default Music;
+export default FriendsList;
