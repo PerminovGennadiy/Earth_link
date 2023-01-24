@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkredux_project=self.webpackChunkredux_project||[]).push([[490],{3490:function(e,r,u){u.r(r),u.d(r,{default:function(){return t}});var n=u(184),t=function(e){return(0,n.jsx)("div",{children:"News"})}}}]);
-//# sourceMappingURL=490.363586da.chunk.js.map
