@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/Earth_link/static/js/0.846e04d8.chunk.js"
   },
   {
-    "revision": "5384a57b8ede08e6ccbf",
+    "revision": "a925b4722affd62c465b",
     "url": "/Earth_link/static/css/main.569bcf4e.chunk.css"
   },
   {
-    "revision": "5384a57b8ede08e6ccbf",
-    "url": "/Earth_link/static/js/main.5384a57b.chunk.js"
+    "revision": "a925b4722affd62c465b",
+    "url": "/Earth_link/static/js/main.a925b472.chunk.js"
   },
   {
     "revision": "4419e931955ad52386d9",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/Earth_link/static/media/telegram.11bf08d6.svg"
   },
   {
-    "revision": "d49e4fac765e574144b830f66e50d82a",
+    "revision": "f884556be43c8cbf9e6e98647472542d",
     "url": "/Earth_link/index.html"
   }
 ];
