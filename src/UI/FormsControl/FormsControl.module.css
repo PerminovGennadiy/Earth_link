@@ -1,0 +1,60 @@
+.formControl.error input,
+.error textarea {
+    border: 2px solid darkred;
+}
+
+.formControl.error span {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 0;
+    color: darkred;
+    font-size: larger;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+    border: 2px solid darkred;
+    box-shadow: 1px 1px 3px#000;
+    background-color: #004b3d;
+
+}
+
+.formSummaryError {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 0;
+    color: darkred;
+    font-size: larger;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px black;
+    border: 2px solid darkred;
+    box-shadow: 1px 1px 3px#000;
+    background-color: #004b3d;
+}
+
+.captchaInput {
+    margin-top: 10px;
+    width: 220px;
+    height: 30px;
+    border: 1px solid #022c24;
+    border-radius: 4px;
+}
+
+.newSkills, .newLinks,
+.newForm {
+    width: 220px;
+    height: 30px;
+    border: 1px solid #022c24;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding-left: 10px;
+    background-color:#004b3d;
+}
+
+.newSkills {
+    gap: 10px;
+}
+
+.newLookingForAJobCheckbox {
+    height: 30px;
+    width: 30px;
+    margin: 10px 0;
+}

@@ -1,0 +1,224 @@
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameAboutMe {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 20px;
+    max-height: 200px;
+    max-width: 700px;
+    hyphens: auto;
+    word-wrap:break-word;
+    overflow: auto;
+}
+
+.name {
+    font-size: 25px;
+    border-bottom: 1px solid #000;
+}
+
+.aboutMe {}
+
+.avatarContainer {
+    position: relative;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 30px #022c24;
+}
+
+/*                                                                */
+
+.upload_file__input {
+    opacity: 0;
+    position: absolute;
+}
+
+.upload_file__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 240px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: absolute;
+    top:0px;
+    right: -20px;
+}
+
+.upload_file__icon {
+    width: 20px;
+    height: auto;
+}
+
+.upload_file__label .upload_file__icon path {
+    transition: .25s ease;
+}
+
+.upload_file__label:hover {
+    color: #022c24;
+}
+
+.upload_file__icon:hover {
+    cursor: pointer;
+
+}
+
+.upload_file__label:hover .upload_file__icon path {
+    fill: #022c24;
+}
+/*                                                                */
+.wrapperImg {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid #022c24;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 30px #022c24;
+}
+
+.background {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.jobContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.readyForJob {
+    max-width: 400px;
+    hyphens: auto;
+    word-wrap:break-word;
+}
+
+.lookingForAJob {
+    font-size: 15px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.lookingForAJobImg {
+    width: 20px;
+}
+
+.lookingForAJobDescription {
+    margin-top: 10px;
+}
+
+.none {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.social {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 150px;
+    margin: auto 0;
+}
+
+.socialContainer {
+    width: 150px;
+    height: 40px;
+}
+
+.contactImg {
+    position: relative;
+    top: 15%;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.currentStatus {
+}
+
+.newStatus {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    min-height: 40px;
+    max-height: 150px ;
+    min-width: 100px;
+    max-width: 700px;
+    outline:none;
+    box-shadow: 2px 2px 2px#022c24;
+    padding-left: 10px;
+    background-color: #004b3d;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/*                                                                */
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: relative;
+}
+
+.newLinksContainer {
+    margin: 10px 0;
+    gap: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.formButtonChangeContainer,
+.formButtonSubmitContainer {
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+.formButtonChangeContainer button,
+.formButtonSubmitContainer button {
+    width: 80px;
+    height: 35px;
+    font-weight: 500;
+    background-color:#004b3d;
+    transition: 0.2s;
+}
+
+.formButtonChangeContainer {
+    top: -120px;
+}
+
+.formButtonChangeContainer button:hover,
+.formButtonSubmitContainer button:hover {
+    background:#00725d;
+}
+
+.formButtonChangeContainer button:active,
+.formButtonSubmitContainer button:active {
+    background:#022c24;
+}

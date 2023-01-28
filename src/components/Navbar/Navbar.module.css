@@ -19,8 +19,6 @@
 
 .navOption a:hover {
     cursor: pointer;
-    text-decoration: underline;
-    font-size: 28px;
 }
 
 .navOption .active {
@@ -28,6 +26,6 @@
     font-size: 30px;
 }
 
-a {
+.navOption a {
     transition:color 1s ease, font-size 1s ease;
 }

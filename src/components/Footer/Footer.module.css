@@ -1,3 +1,28 @@
+.footer p{
+    color: rgb(27, 27, 27);
+}
+
+.footer ul li:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.footer ul li:not(:first-child):not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.footer_contacts ul li:last-child {
+    display: flex;
+}
+
+.heart {
+    position: relative;
+    padding-left: 5px;
+    width: 2px;
+    bottom: 2px;
+}
+
 .footer {
     grid-area: f;
 }
@@ -6,9 +31,56 @@
     border-radius: 5px;
     box-shadow: 3px 3px 30px #022c24;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
-.text {
+
+.footer_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.seti_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo_container {
+    align-items: center;
+    width: 100px;
+}
+
+.connect_container {
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-bottom: 10px;
+    position: relative;
+    right: 10px;
+}
+
+.a {
+    width: 200px;
+}
+
+.seti {
+    width: 30px;
+}
+
+.youtube {
+    width: 40px;
+}
+
+.number {
     font-size: 20px;
-    line-height: 20px;
-    color: rgb(10, 10, 10);
+    font-weight: 700;
 }
+

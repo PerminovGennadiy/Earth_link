@@ -1,0 +1,78 @@
+h1 {
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.login__container {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 15px;
+}
+
+.testData {
+    text-align: right;
+    position: relative;
+    bottom: 45px;
+    max-width: 300px;
+}
+
+.submitButton {
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 10px;
+    background: #004b3d;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.submitButton:hover {
+    background: #006351;
+}
+
+.submitButton:active {
+    background: rgb(33, 147, 90);
+    box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.form {
+    width: 220px;
+    height: 30px;
+    border: 1px solid #022c24;
+    border-radius: 4px;
+}
+
+.rememberMeContainer {
+    display: flex;
+    height: 30px;
+}
+
+.rememberMeContainer div {
+    font-size: large;
+    font-weight: 600;
+}
+
+.rememberMeContainer div {
+    padding-top: 5px;
+}
+
+.buttonRememberMe{
+    width: 30px;
+    position: relative;
+    bottom: 3px;
+}
+
+input{
+    padding: 0 15px;
+}
+
+.captchaImg {
+    width: 130%;
+    border-radius: 10px;
+    border: 2px solid #022c24;
+    box-shadow: 2px 2px 2px #022c24;
+}

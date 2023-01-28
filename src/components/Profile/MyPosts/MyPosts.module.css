@@ -1,0 +1,77 @@
+.posts {
+        font-size: 25px;
+        line-height: 40px;
+        color: rgb(10, 10, 10);
+        padding-bottom: 20px;
+}
+
+/* Контейнер формы */
+.addNewPost {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 10px;
+
+}
+
+.Name_button{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.postName {
+    border-radius: 5px;
+    height: 60px;
+    width: 300px;
+    resize: none;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.postMain {
+    resize: none;
+    width: 500px;
+    height: 125px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    padding:5px;
+}
+
+.postMain, .postName {
+    font-weight: 700;
+    background-color: #004b3d;
+    border-color: #022c24;
+    box-shadow: 3px -3px 15px #022c24;
+}
+
+.addNewPost_button {
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 10px;
+    background: #004b3d;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.postItem {
+    max-width: 950px;
+}
+
+.addNewPost_button:hover {
+    background: rgb(54, 151, 103);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+    color: #022c24;
+}
+
+.addNewPost_button:active {
+    background: rgb(0, 255, 128);
+    box-shadow: 0 3px rgb(6, 153, 80) inset;
+}

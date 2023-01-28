@@ -27,6 +27,7 @@
     font-weight: 400;
     font-variant: small-caps;
     text-shadow: 1px -2px 3px #084a5c;
+    text-decoration: none;
 }
 
 .settings {
@@ -39,4 +40,25 @@
 .settings:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.logOutButton {
+    width: 55px;
+    height: 55px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 1px -1px 2px gray;
+    border-radius: 50%;
+    background: #08495a;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.logOutButton:hover {
+    background: #0c6d83;
+}
+
+.logOutButton:active {
+    background: #12b9df;
+    box-shadow: 1px 1px #07404d inset;
 }

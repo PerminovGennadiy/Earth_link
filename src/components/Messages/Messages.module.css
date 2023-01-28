@@ -1,0 +1,127 @@
+/*Общий контейнер*/
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 100%;
+}
+
+.dialog_items{
+    border-right: 2px #022c24 solid;
+    max-height: 550px;
+    overflow-y: auto;
+    overflow-x: none;
+    min-width: 200px;
+
+}
+
+/*Контейнер у диалогов*/
+.dialog__container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px #022c2496 solid;
+
+}
+
+/*диалог*/
+
+.dialog {
+}
+
+.dialog a {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 5px -3px 5px #022c24;
+    align-self: start;
+    margin-right: 10px;
+}
+
+.message {
+    padding-left: 20px;
+}
+
+.link {
+    width: 120px;
+    word-wrap:break-word;
+}
+
+.name {
+    
+}
+.name:hover {
+    text-decoration: none;
+}
+
+
+/*  Блок сообшений  */
+
+.allMessages {
+    overflow: scroll;
+    max-height: 450px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.message__container {
+    padding-bottom: 10px;
+    max-width: 750px;
+    overflow:scroll;
+    word-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    position: relative;
+    height: 100%;
+
+}
+
+.AreaMessageContainer {
+    min-width: 100%;
+}
+
+.AreaMessage {
+    font-weight: 700;
+    width: 100%;
+    height: 100px;
+    background-color: #004b3d;
+    border-color: #022c24;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.sendMessage {
+    
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    font-weight: 700;
+    color: gray;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 10px;
+    background: #004b3d;
+    box-shadow: -2px -3px #022c24 inset;
+    transition: 0.2s;
+}
+
+.sendMessage:hover { background: #006351; }
+.sendMessage:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
