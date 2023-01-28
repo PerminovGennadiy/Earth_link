@@ -43,7 +43,7 @@ class App extends Component {
                 <div className='main-content'>
                     <Suspense fallback={<div><Preloader /></div>}>
                         <Routes>
-                            <Route path='/' element={<Welcome />} />
+                            <Route path='/Earth_link' element={<Welcome />} />
                             <Route path="/profile/:profileId?" element={<MyProfileContainer />} />
                             <Route path="/messages/*" element={<MessagesContainer />} />
                             <Route path="/news" element={<News />} />
